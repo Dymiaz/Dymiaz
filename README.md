@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/images/pfp.jpg" width="80" height="80" style="border-radius:50%; border:2px solid #333; filter:grayscale(100%);">
+  <img src="assets/images/circlepfp.png" width="80" height="80" style="border-radius:50%; border:2px solid #333; filter:grayscale(100%);">
   <br>
   <span style="color:#ff4b4b; text-shadow:0 0 6px rgba(255,75,75,0.6); font-weight:bold; font-size:2rem;">Dymiaz</span>
 </p>
