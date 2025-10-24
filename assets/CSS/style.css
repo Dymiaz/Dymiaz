@@ -31,28 +31,15 @@ body {
     transform: scale(1.05);
 }
 
-/* Headers with strong pulsing red glow */
+/* Headers with subtle dark red glow */
 h1, h2 {
     color: #fff;
-    text-shadow: 0 0 12px rgba(255,0,0,0.6), 0 0 24px rgba(255,50,50,0.5);
-    animation: headerGlow 2.5s ease-in-out infinite alternate;
+    text-shadow: 0 0 6px rgba(139,0,0,0.5), 0 0 12px rgba(180,0,0,0.3);
     transition: text-shadow 0.3s ease;
 }
 
 h1:hover, h2:hover {
-    text-shadow: 0 0 25px rgba(255,0,0,0.8), 0 0 50px rgba(255,80,80,0.7);
-}
-
-@keyframes headerGlow {
-    0% {
-        text-shadow: 0 0 12px rgba(255,0,0,0.6), 0 0 24px rgba(255,50,50,0.5);
-    }
-    50% {
-        text-shadow: 0 0 20px rgba(255,0,0,0.8), 0 0 40px rgba(255,80,80,0.7);
-    }
-    100% {
-        text-shadow: 0 0 28px rgba(255,0,0,0.9), 0 0 56px rgba(255,100,100,0.8);
-    }
+    text-shadow: 0 0 12px rgba(180,0,0,0.6), 0 0 24px rgba(220,0,0,0.4);
 }
 
 /* Navbar */
@@ -68,7 +55,7 @@ h1:hover, h2:hover {
     box-shadow: 0 0 15px rgba(255,255,255,0.05);
 }
 
-/* All tab buttons glow */
+/* Buttons */
 .tab {
     background: #111;
     color: #fff;
@@ -80,19 +67,19 @@ h1:hover, h2:hover {
     font-weight: 500;
     letter-spacing: 0.5px;
     position: relative;
-    box-shadow: 0 0 12px rgba(255,0,0,0.5);
-    animation: buttonGlow 2.5s ease-in-out infinite alternate;
+    box-shadow: 0 0 12px rgba(255,0,0,0.5); /* static red glow */
 }
 
 .tab:hover {
     background: #1c1c1c;
     transform: translateY(-2px);
+    box-shadow: 0 0 28px rgba(255,50,50,0.7); /* glow intensifies on hover */
 }
 
 .tab.active {
     background: #660000;
     font-weight: 600;
-    box-shadow: 0 0 28px rgba(255,0,0,0.9);
+    box-shadow: 0 0 28px rgba(255,50,50,0.8);
 }
 
 /* Dropdown */
@@ -101,24 +88,27 @@ h1:hover, h2:hover {
     display: inline-block;
 }
 
+/* "More" button with static glow */
 .dropbtn {
     width: auto;
     min-width: 100px;
     position: relative;
+    box-shadow: 0 0 12px rgba(255,0,0,0.5); /* static glow */
+    animation: none; /* remove pulsing animation */
 }
 
-/* Dropdown arrow with rotation and glow */
+/* Arrow rotation and glow on hover */
 .dropbtn::after {
     content: " ▾";
     display: inline-block;
     margin-left: 5px;
     transition: transform 0.3s ease, text-shadow 0.3s ease;
-    text-shadow: 0 0 12px rgba(255,0,0,0.6);
+    text-shadow: 0 0 12px rgba(255,0,0,0.5);
 }
 
 .dropbtn:hover::after {
     transform: rotate(180deg);
-    text-shadow: 0 0 20px rgba(255,50,50,0.8), 0 0 40px rgba(255,80,80,0.6);
+    text-shadow: 0 0 20px rgba(255,50,50,0.7), 0 0 40px rgba(255,80,80,0.5);
 }
 
 /* Dropdown content */
@@ -153,25 +143,12 @@ h1:hover, h2:hover {
     text-align: left;
     cursor: pointer;
     transition: all 0.25s ease;
-    box-shadow: 0 0 12px rgba(255,0,0,0.5);
-    animation: buttonGlow 2.5s ease-in-out infinite alternate;
+    box-shadow: 0 0 12px rgba(255,0,0,0.5); /* match other buttons */
 }
 
 .dropdown-content button:hover {
     background: #1c1c1c;
-}
-
-/* Animations */
-@keyframes buttonGlow {
-    0% {
-        box-shadow: 0 0 10px rgba(255,0,0,0.5), 0 0 20px rgba(255,50,50,0.4);
-    }
-    50% {
-        box-shadow: 0 0 18px rgba(255,0,0,0.7), 0 0 36px rgba(255,80,80,0.6);
-    }
-    100% {
-        box-shadow: 0 0 25px rgba(255,0,0,0.9), 0 0 50px rgba(255,100,100,0.7);
-    }
+    box-shadow: 0 0 28px rgba(255,50,50,0.7);
 }
 
 /* Content */
