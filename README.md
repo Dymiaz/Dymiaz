@@ -9,8 +9,6 @@
       margin: 0;
       padding: 0;
     }
-
-    /* Header */
     .header {
       display: flex;
       justify-content: center;
@@ -19,8 +17,7 @@
       margin: 25px auto;
       padding: 10px 20px;
     }
-
-    .header img {
+.header img {
       width: 70px;
       height: 70px;
       border-radius: 50%;
@@ -29,12 +26,10 @@
       filter: grayscale(100%);
       transition: 0.3s ease;
     }
-
-    .header img:hover {
+.header img:hover {
       filter: grayscale(0%);
       transform: scale(1.05);
     }
-
     .header h1 {
       font-size: 2.2rem;
       font-weight: 700;
@@ -44,7 +39,6 @@
       text-shadow: 0 0 8px rgba(255, 50, 50, 0.4), 0 0 16px rgba(255, 70, 70, 0.3);
       animation: subtleGlow 3s ease-in-out infinite alternate;
     }
-
     @keyframes subtleGlow {
       0% {
         text-shadow: 0 0 6px rgba(255, 50, 50, 0.3), 0 0 12px rgba(255, 70, 70, 0.2);
@@ -53,7 +47,6 @@
         text-shadow: 0 0 10px rgba(255, 70, 70, 0.5), 0 0 20px rgba(255, 90, 90, 0.4);
       }
     }
-
     /* Navbar */
     .navbar {
       display: flex;
@@ -65,7 +58,6 @@
       border-radius: 14px;
       box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
     }
-
     .tab {
       background: #111;
       color: #fff;
@@ -77,25 +69,21 @@
       font-weight: 500;
       letter-spacing: 0.5px;
     }
-
     .tab:hover {
       background: #1c1c1c;
       transform: translateY(-2px);
     }
-
     .tab.active {
       background: #fff;
       color: #000;
       font-weight: 600;
       box-shadow: 0 0 15px rgba(255,255,255,0.1);
     }
-
     /* Content */
     .content {
       display: none;
       animation: fadeIn 0.6s ease;
     }
-
     .content.active {
       display: flex;
       justify-content: space-between;
@@ -110,32 +98,27 @@
       padding: 30px;
       box-shadow: 0 0 20px rgba(255,255,255,0.05);
     }
-
     .text {
       flex: 1;
       margin-right: 25px;
       min-width: 260px;
     }
-
     .text h2 {
       margin-top: 0;
       color: #fff;
       font-weight: 700;
       letter-spacing: 0.8px;
     }
-
     .text p {
       line-height: 1.7;
       color: #d1d1d1;
     }
-
     .image {
       flex: 1;
       display: flex;
       justify-content: center;
       align-items: center;
     }
-
     .image img {
       width: 250px;
       height: auto;
@@ -145,24 +128,20 @@
       transition: transform 0.3s ease, filter 0.3s ease;
       filter: grayscale(100%);
     }
-
     .image img:hover {
       transform: scale(1.05);
       filter: grayscale(0%);
     }
-
     @keyframes fadeIn {
       from {opacity: 0; transform: translateY(10px);}
       to {opacity: 1; transform: translateY(0);}
     }
-
     a {
       color: #fff;
       text-decoration: none;
       border-bottom: 1px solid #333;
       transition: 0.3s;
     }
-
     a:hover {
       color: #ccc;
       border-bottom: 1px solid #666;
