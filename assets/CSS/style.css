@@ -41,13 +41,14 @@ body {
 
 @keyframes subtleGlow {
     0% { text-shadow: 0 0 8px rgba(139,0,0,0.3), 0 0 16px rgba(255,0,0,0.2);}
+    50% { text-shadow: 0 0 12px rgba(255,0,0,0.5), 0 0 24px rgba(255,50,50,0.4);}
     100% { text-shadow: 0 0 14px rgba(139,0,0,0.5), 0 0 28px rgba(255,0,0,0.4);}
 }
 
 /* Navbar */
 .navbar {
     display: flex;
-    justify-content: flex-end; /* push buttons to right */
+    justify-content: flex-end;
     align-items: center;
     gap: 10px;
     background: #0d0d0d;
@@ -90,12 +91,13 @@ body {
     display: inline-block;
 }
 
-.dropbtn:hover {
-    background: #1c1c1c;
-    box-shadow: 0 0 15px rgba(255,50,50,0.5);
-    transform: translateY(-2px);
+.dropbtn {
+    width: auto;
+    min-width: 100px; /* match other buttons */
+    animation: pulseGlow 2.5s infinite alternate;
 }
 
+/* Dropdown content with glow on buttons */
 .dropdown-content {
     display: flex;
     flex-direction: column;
@@ -127,12 +129,19 @@ body {
     width: 100%;
     text-align: left;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.25s ease;
 }
 
 .dropdown-content button:hover {
     background: #1c1c1c;
-    box-shadow: 0 0 12px rgba(255,0,0,0.4);
+    box-shadow: 0 0 15px rgba(255,50,50,0.4);
+}
+
+/* Glow animation for "More" button */
+@keyframes pulseGlow {
+    0% { box-shadow: 0 0 5px rgba(255,50,50,0.4); }
+    50% { box-shadow: 0 0 15px rgba(255,50,50,0.6); }
+    100% { box-shadow: 0 0 8px rgba(255,50,50,0.5); }
 }
 
 /* Content */
