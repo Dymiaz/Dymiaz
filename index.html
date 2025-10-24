@@ -17,12 +17,12 @@
 
 <!-- Navbar -->
 <div class="navbar">
-    <div class="nav-left"></div>
     <div class="nav-right">
         <button class="tab active" onclick="showTab('test1')">Test1</button>
         <button class="tab" onclick="showTab('test2')">Test2</button>
+
         <div class="dropdown">
-            <button class="tab dropbtn">More</button>
+            <button class="tab dropbtn">More ▾</button>
             <div class="dropdown-content">
                 <button onclick="alert('Extra 1')">Extra 1</button>
                 <button onclick="alert('Extra 2')">Extra 2</button>
@@ -32,28 +32,21 @@
     </div>
 </div>
 
-<!-- Main Tab -->
+<!-- Tabs Content -->
 <div id="test1" class="content active">
     <div class="text">
         <h2>Welcome to Test1 👋</h2>
-        <p>
-            This is your main profile section. Keep it dark, minimal, and sleek.  
-            Add a tagline, intro, or GitHub stats here.
-        </p>
+        <p>This is your main profile section. Keep it dark, minimal, and sleek.</p>
     </div>
     <div class="image">
         <img src="assets/images/side2.jpg" alt="Test1 Image">
     </div>
 </div>
 
-<!-- Second Tab -->
 <div id="test2" class="content">
     <div class="text">
         <h2>Welcome to Test2 ⚙️</h2>
-        <p>
-            Showcase projects, concepts, or visual work here.  
-            Keep the dark aesthetic consistent.
-        </p>
+        <p>Showcase projects, concepts, or visual work here.</p>
     </div>
     <div class="image">
         <img src="assets/images/side1.jpg" alt="Test2 Image">
@@ -68,14 +61,17 @@ function showTab(tabId){
     document.getElementById(tabId).classList.add('active');
 }
 
-// Optional: click-to-toggle dropdown
-document.querySelector('.dropbtn').addEventListener('click', function(e){
-    e.stopPropagation();
-    document.querySelector('.dropdown-content').classList.toggle('show');
+// Dropdown toggle
+document.querySelectorAll('.dropbtn').forEach(btn => {
+    btn.addEventListener('click', function(e){
+        e.stopPropagation();
+        const content = this.nextElementSibling;
+        content.classList.toggle('show');
+    });
 });
 
 window.addEventListener('click', function(){
-    document.querySelector('.dropdown-content').classList.remove('show');
+    document.querySelectorAll('.dropdown-content').forEach(dc => dc.classList.remove('show'));
 });
 </script>
 
