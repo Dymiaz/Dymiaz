@@ -1,13 +1,13 @@
 <p align="center">
   <img src="assets/images/circlepfp.png" width="80" height="80" style="border-radius:50%; border:2px solid #333; filter:grayscale(100%);">
   <br>
-  <span style="color:#ff4b4b; text-shadow:0 0 6px rgba(255,75,75,0.6); font-weight:bold; font-size:2rem;">🟈 Dymiaz 🟈</span>
+  <span style="color:#ff4b4b; text-shadow:0 0 6px rgba(255,75,75,0.6); font-weight:bold; font-size:2rem;">🟈 Vile 🟈</span>
 </p>
 
 ---
 
 <p align="center">
-  <strong>Hello, I'm Dymia, welcome to my profile!</strong><br>
+  <strong>Hello, I'm Vile, welcome to my profile!</strong><br>
  Full-stack developer & cybersec explorer. I love crafting clean, secure, and innovative web projects.
 </p>
 
@@ -17,7 +17,7 @@
 
 🟈 I’m currently working on **Crime Network**  
 🟈 I’m an 18-year-old Full-stack developer & cybersecurity enthusiast <br>
-🟈 View my work [here](https://dymiaz.github.io/Dymiaz/)
+🟈 View my work [here]()
 
 ---
 
