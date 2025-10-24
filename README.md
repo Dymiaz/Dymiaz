@@ -7,31 +7,26 @@
 ---
 
 <p align="center">
-  <strong>Welcome to my GitHub profile 👋</strong><br>
-  Dark-themed, minimalistic, and professional.
+  <strong>Hello, I'm Dymia, welcome to my profile!</strong><br>
+ Full-stack developer & cybersec explorer. I love crafting clean, secure, and innovative web projects.
 </p>
 
 ---
 
-## <img src="assets/images/pfp.jpg" width="30" height="30" style="vertical-align:middle; margin-right:8px;"> About Me
+## <img src="assets/images/profileicon.png" width="30" height="30" style="vertical-align:middle; margin-right:8px;"> About Me
 
-- 🔭 I’m currently working on **[Project/Repo Name]**  
-- 🌱 I’m learning advanced **JavaScript, Web Development, and Cybersecurity**  
-- 👯 I’m looking to collaborate on **creative projects and open-source contributions**  
-- 💬 Ask me about **coding, cybersec, and design**  
-- 📫 How to reach me: [your-email@example.com](mailto:your-email@example.com)
+🟈 I’m currently working on **Crime Network**  
+🟈 I’m an 18-year-old Full-stack developer & cybersecurity enthusiast <br>
+🟈 View my work [here](https://dymiaz.github.io/Dymiaz/)
 
 ---
 
-## <img src="assets/icons/projects.png" width="30" height="30" style="vertical-align:middle; margin-right:8px;"> Projects / Highlights
+## <img src="assets/images/fileicon.png" width="30" height="30" style="vertical-align:middle; margin-right:8px;"> Projects / Highlights
 
 <table>
 <tr>
 <td valign="top" width="60%">
-### Test1
-Welcome to Test1 👋  
-This section highlights my main project or profile info.  
-Keep it minimal, dark-themed, and informative.
+placeholder
 </td>
 <td valign="top" width="40%" align="right">
 <img src="assets/images/side1.jpg" width="250" style="border-radius:12px; border:1px solid #333;">
@@ -39,31 +34,11 @@ Keep it minimal, dark-themed, and informative.
 </tr>
 </table>
 
-<table>
-<tr>
-<td valign="top" width="60%">
-### Test2
-This section showcases additional projects, experiments, or creative work.  
-Highlight screenshots, badges, or visuals here to make it professional and appealing.
-</td>
-<td valign="top" width="40%" align="right">
-<img src="YOUR_RIGHT_IMAGE_2_URL_HERE" width="250" style="border-radius:12px; border:1px solid #333;">
-</td>
-</tr>
-</table>
+
 
 ---
 
-## <img src="assets/icons/stats.png" width="30" height="30" style="vertical-align:middle; margin-right:8px;"> GitHub Stats
+## <img src="assets/images/chaticon.png" width="30" height="30" style="vertical-align:middle; margin-right:8px;"> Connect with Me
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Dymiaz&show_icons=true&theme=dark&hide_border=true&count_private=true" alt="GitHub Stats" />
-</p>
 
----
-
-## <img src="assets/icons/connect.png" width="30" height="30" style="vertical-align:middle; margin-right:8px;"> Connect with Me
-<p align="center">
-  <a href="https://github.com/Dymiaz" target="_blank">GitHub</a> •
-  <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank">LinkedIn</a> •
-  <a href="https://twitter.com/YOUR_TWITTER" target="_blank">Twitter</a>
 </p>
