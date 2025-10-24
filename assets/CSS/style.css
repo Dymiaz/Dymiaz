@@ -31,27 +31,27 @@ body {
     transform: scale(1.05);
 }
 
-/* Headers with pulsing red glow */
+/* Headers with strong pulsing red glow */
 h1, h2 {
     color: #fff;
-    text-shadow: 0 0 10px rgba(139,0,0,0.5), 0 0 20px rgba(255,0,0,0.4);
-    animation: headerGlow 3s ease-in-out infinite alternate;
+    text-shadow: 0 0 12px rgba(255,0,0,0.6), 0 0 24px rgba(255,50,50,0.5);
+    animation: headerGlow 2.5s ease-in-out infinite alternate;
     transition: text-shadow 0.3s ease;
 }
 
 h1:hover, h2:hover {
-    text-shadow: 0 0 25px rgba(255,0,0,0.7), 0 0 50px rgba(255,80,80,0.6);
+    text-shadow: 0 0 25px rgba(255,0,0,0.8), 0 0 50px rgba(255,80,80,0.7);
 }
 
 @keyframes headerGlow {
     0% {
-        text-shadow: 0 0 10px rgba(139,0,0,0.5), 0 0 20px rgba(255,0,0,0.4);
+        text-shadow: 0 0 12px rgba(255,0,0,0.6), 0 0 24px rgba(255,50,50,0.5);
     }
     50% {
-        text-shadow: 0 0 16px rgba(255,0,0,0.6), 0 0 32px rgba(255,80,80,0.5);
+        text-shadow: 0 0 20px rgba(255,0,0,0.8), 0 0 40px rgba(255,80,80,0.7);
     }
     100% {
-        text-shadow: 0 0 20px rgba(139,0,0,0.55), 0 0 40px rgba(255,60,60,0.55);
+        text-shadow: 0 0 28px rgba(255,0,0,0.9), 0 0 56px rgba(255,100,100,0.8);
     }
 }
 
@@ -68,7 +68,7 @@ h1:hover, h2:hover {
     box-shadow: 0 0 15px rgba(255,255,255,0.05);
 }
 
-/* Buttons */
+/* All tab buttons glow */
 .tab {
     background: #111;
     color: #fff;
@@ -80,7 +80,8 @@ h1:hover, h2:hover {
     font-weight: 500;
     letter-spacing: 0.5px;
     position: relative;
-    animation: buttonGlow 3s ease-in-out infinite alternate;
+    box-shadow: 0 0 12px rgba(255,0,0,0.5);
+    animation: buttonGlow 2.5s ease-in-out infinite alternate;
 }
 
 .tab:hover {
@@ -91,6 +92,7 @@ h1:hover, h2:hover {
 .tab.active {
     background: #660000;
     font-weight: 600;
+    box-shadow: 0 0 28px rgba(255,0,0,0.9);
 }
 
 /* Dropdown */
@@ -103,23 +105,20 @@ h1:hover, h2:hover {
     width: auto;
     min-width: 100px;
     position: relative;
-    box-shadow: 0 0 10px rgba(255,0,0,0.4);
-    transition: box-shadow 0.3s ease;
 }
 
-/* Arrow for dropdown */
+/* Dropdown arrow with rotation and glow */
 .dropbtn::after {
     content: " ▾";
     display: inline-block;
     margin-left: 5px;
     transition: transform 0.3s ease, text-shadow 0.3s ease;
-    text-shadow: 0 0 10px rgba(255,0,0,0.5);
+    text-shadow: 0 0 12px rgba(255,0,0,0.6);
 }
 
-/* Arrow rotates and glows on hover */
 .dropbtn:hover::after {
     transform: rotate(180deg);
-    text-shadow: 0 0 20px rgba(255,50,50,0.7), 0 0 40px rgba(255,80,80,0.5);
+    text-shadow: 0 0 20px rgba(255,50,50,0.8), 0 0 40px rgba(255,80,80,0.6);
 }
 
 /* Dropdown content */
@@ -154,7 +153,8 @@ h1:hover, h2:hover {
     text-align: left;
     cursor: pointer;
     transition: all 0.25s ease;
-    animation: buttonGlow 3s ease-in-out infinite alternate;
+    box-shadow: 0 0 12px rgba(255,0,0,0.5);
+    animation: buttonGlow 2.5s ease-in-out infinite alternate;
 }
 
 .dropdown-content button:hover {
@@ -162,16 +162,16 @@ h1:hover, h2:hover {
 }
 
 /* Animations */
-@keyframes headerGlow {
-    0% { text-shadow: 0 0 10px rgba(139,0,0,0.5), 0 0 20px rgba(255,0,0,0.4);}
-    50% { text-shadow: 0 0 16px rgba(255,0,0,0.6), 0 0 32px rgba(255,80,80,0.5);}
-    100% { text-shadow: 0 0 20px rgba(139,0,0,0.55), 0 0 40px rgba(255,60,60,0.55);}
-}
-
 @keyframes buttonGlow {
-    0% { box-shadow: 0 0 10px rgba(255,0,0,0.4), 0 0 20px rgba(255,50,50,0.3);}
-    50% { box-shadow: 0 0 18px rgba(255,0,0,0.6), 0 0 36px rgba(255,80,80,0.4);}
-    100% { box-shadow: 0 0 20px rgba(255,0,0,0.5), 0 0 40px rgba(255,60,60,0.5);}
+    0% {
+        box-shadow: 0 0 10px rgba(255,0,0,0.5), 0 0 20px rgba(255,50,50,0.4);
+    }
+    50% {
+        box-shadow: 0 0 18px rgba(255,0,0,0.7), 0 0 36px rgba(255,80,80,0.6);
+    }
+    100% {
+        box-shadow: 0 0 25px rgba(255,0,0,0.9), 0 0 50px rgba(255,100,100,0.7);
+    }
 }
 
 /* Content */
@@ -235,4 +235,3 @@ h1:hover, h2:hover {
     from {opacity: 0; transform: translateY(10px);}
     to {opacity: 1; transform: translateY(0);}
 }
-
