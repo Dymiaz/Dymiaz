@@ -17,8 +17,19 @@
 
 <!-- Navbar -->
 <div class="navbar">
-    <button class="tab active" onclick="showTab('test1')">Test1</button>
-    <button class="tab" onclick="showTab('test2')">Test2</button>
+    <div class="nav-left"></div>
+    <div class="nav-right">
+        <button class="tab active" onclick="showTab('test1')">Test1</button>
+        <button class="tab" onclick="showTab('test2')">Test2</button>
+        <div class="dropdown">
+            <button class="tab dropbtn">More</button>
+            <div class="dropdown-content">
+                <button onclick="alert('Extra 1')">Extra 1</button>
+                <button onclick="alert('Extra 2')">Extra 2</button>
+                <button onclick="alert('Extra 3')">Extra 3</button>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- Main Tab -->
@@ -56,6 +67,16 @@ function showTab(tabId){
     document.querySelector(`[onclick="showTab('${tabId}')"]`).classList.add('active');
     document.getElementById(tabId).classList.add('active');
 }
+
+// Optional: click-to-toggle dropdown
+document.querySelector('.dropbtn').addEventListener('click', function(e){
+    e.stopPropagation();
+    document.querySelector('.dropdown-content').classList.toggle('show');
+});
+
+window.addEventListener('click', function(){
+    document.querySelector('.dropdown-content').classList.remove('show');
+});
 </script>
 
 </body>
