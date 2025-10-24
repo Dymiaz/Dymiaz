@@ -55,7 +55,7 @@ h1:hover, h2:hover {
     box-shadow: 0 0 15px rgba(255,255,255,0.05);
 }
 
-/* All tab buttons glow */
+/* All main tab buttons glow */
 .tab {
     background: #111;
     color: #fff;
@@ -85,7 +85,7 @@ h1:hover, h2:hover {
 
 /* Stop "More" button from pulsing */
 .tab.dropbtn {
-    animation: none !important;  /* override inherited animation */
+    animation: none !important;
     box-shadow: 0 0 12px rgba(255,0,0,0.5); /* static glow */
 }
 
@@ -136,6 +136,7 @@ h1:hover, h2:hover {
     pointer-events: auto;
 }
 
+/* Dropdown buttons — lighter glow */
 .dropdown-content button {
     background: #111;
     color: #fff;
@@ -145,12 +146,12 @@ h1:hover, h2:hover {
     text-align: left;
     cursor: pointer;
     transition: all 0.25s ease;
-    box-shadow: 0 0 12px rgba(255,0,0,0.5);
+    box-shadow: 0 0 6px rgba(255,0,0,0.3); /* lighter than main tabs */
 }
 
 .dropdown-content button:hover {
     background: #1c1c1c;
-    box-shadow: 0 0 28px rgba(255,50,50,0.7);
+    box-shadow: 0 0 12px rgba(255,50,50,0.4); /* lighter hover glow */
 }
 
 /* Content */
