@@ -1,5 +1,3 @@
-/* style.css - Dymiaz Dark Theme */
-
 body {
     font-family: "Poppins", "Segoe UI", Arial, sans-serif;
     background: #0a0a0a;
@@ -49,7 +47,7 @@ body {
 /* Navbar */
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end; /* push buttons to right */
     align-items: center;
     gap: 10px;
     background: #0d0d0d;
@@ -57,12 +55,6 @@ body {
     padding: 12px 20px;
     border-radius: 14px;
     box-shadow: 0 0 15px rgba(255,255,255,0.05);
-}
-
-.nav-right {
-    display: flex;
-    gap: 10px;
-    align-items: center;
 }
 
 /* Buttons */
@@ -104,7 +96,6 @@ body {
     transform: translateY(-2px);
 }
 
-/* Dropdown content with slide effect */
 .dropdown-content {
     display: flex;
     flex-direction: column;
@@ -202,7 +193,6 @@ body {
     filter: grayscale(0%);
 }
 
-/* Animations */
 @keyframes fadeIn {
     from {opacity: 0; transform: translateY(10px);}
     to {opacity: 1; transform: translateY(0);}
