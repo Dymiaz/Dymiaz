@@ -24,9 +24,9 @@
         <div class="dropdown">
             <button class="tab dropbtn">More ▾</button>
             <div class="dropdown-content">
-                <button onclick="alert('Extra 1')">Extra 1</button>
-                <button onclick="alert('Extra 2')">Extra 2</button>
-                <button onclick="alert('Extra 3')">Extra 3</button>
+                <button class="tab" onclick="showTab('extra1')">Extra 1</button>
+                <button class="tab" onclick="showTab('extra2')">Extra 2</button>
+                <button class="tab" onclick="showTab('extra3')">Extra 3</button>
             </div>
         </div>
     </div>
@@ -53,12 +53,38 @@
     </div>
 </div>
 
+<!-- Extra tabs linked from dropdown -->
+<div id="extra1" class="content">
+    <div class="text">
+        <h2>Extra Tab 1 ✨</h2>
+        <p>This tab is linked from the "More" dropdown button.</p>
+    </div>
+</div>
+
+<div id="extra2" class="content">
+    <div class="text">
+        <h2>Extra Tab 2 ⚡</h2>
+        <p>Another dropdown tab content example.</p>
+    </div>
+</div>
+
+<div id="extra3" class="content">
+    <div class="text">
+        <h2>Extra Tab 3 🔥</h2>
+        <p>Additional content for Extra 3 tab.</p>
+    </div>
+</div>
+
 <script>
 function showTab(tabId){
+    // remove active from all main tabs and dropdown buttons
     document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
     document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
-    document.querySelector(`[onclick="showTab('${tabId}')"]`).classList.add('active');
-    document.getElementById(tabId).classList.add('active');
+    // add active to clicked button and corresponding content
+    const btn = document.querySelector(`[onclick="showTab('${tabId}')"]`);
+    if(btn) btn.classList.add('active');
+    const content = document.getElementById(tabId);
+    if(content) content.classList.add('active');
 }
 
 // Dropdown toggle
