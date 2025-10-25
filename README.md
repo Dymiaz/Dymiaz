@@ -42,6 +42,6 @@ placeholder
 ---
 
 ## <img src="assets/images/chaticon.png" width="30" height="30" style="vertical-align:middle; margin-right:8px;"> Connect with Me
-856752154077298699
-[![Discord Presence](https://lanyard.cnrad.dev/api/?idleMessage=Inactive)](https://discord.com/users/)
-
+<p align="center">
+<a href="https://discord.com/users/856752154077298699"><img src="https://lanyard.cnrad.dev/api/856752154077298699?bg=000000&idleMessage=In%20you&theme=dark&hideTag=true" /></a>
+</p>
