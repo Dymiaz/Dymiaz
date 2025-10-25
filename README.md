@@ -3,6 +3,9 @@
   <br>
   <span style="color:#ff4b4b; text-shadow:0 0 6px rgba(255,75,75,0.6); font-weight:bold; font-size:2rem;">🟈 Vile 🟈</span>
 </p>
+<p align="center">
+<img src="https://komarev.com/ghpvc/?username=misspoken69&color=000000">
+</p>
 
 ---
 
@@ -39,6 +42,6 @@ placeholder
 ---
 
 ## <img src="assets/images/chaticon.png" width="30" height="30" style="vertical-align:middle; margin-right:8px;"> Connect with Me
-<p align="center">
 
-</p>
+[![Discord Presence](https://lanyard.cnrad.dev/api/?idleMessage=Inactive)](https://discord.com/users/)
+
