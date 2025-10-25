@@ -42,6 +42,6 @@ placeholder
 ---
 
 ## <img src="assets/images/chaticon.png" width="30" height="30" style="vertical-align:middle; margin-right:8px;"> Connect with Me
-
+856752154077298699
 [![Discord Presence](https://lanyard.cnrad.dev/api/?idleMessage=Inactive)](https://discord.com/users/)
 
